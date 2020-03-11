@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #17a2b8;
+    height: 00vh;
+    background:url('image-asset.jpeg');
+  }
+
+  #homepageicon{
+    width: 100px;
+    height: 100px;
+    margin: 0px 20px;
+  }
+
+  #loginBox{
+    
+    width: 400px;
+    height: 580px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+    border-radius: 20px;
+    animation-name: delayModal;
+    animation-duration: 2s;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    padding: 20px;
+
+  }
+
+  #login-title{
+
+    padding-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: 5px 5px black;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px
+  }
+
+.inputTitle{
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    text-shadow: 1px 1px grey;
+    text-transform: uppercase;
+  }
+
+.showPassword{
+  color: black;
+}
+
+.form-control{
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+.form-control:hover{
+  background-color: rgb(156, 154, 154);
+}
+
+.form-control:focus{
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+
+  @keyframes delayModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #login-alert {
+    color: red;
+    background-color: rgb(238, 164, 137);
+    border: none;
+  }
+  
+  #login-event-button {
+    margin-top: 30px;
+    border: 3px solid black;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 1px 1px white;
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  #a-account h4 {
+    font-size: 20px;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .register-link{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #link-register{
+    font-size: 30px;
+    color: rgb(4, 4, 121);
+  }
+
+
+
+  /* REGISTER CSS ///////////////////// */
+
+  /*Registration dialog*/
+/* #id01 {
+    width: 400px;
+    height: 500px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    border-radius: 20px;
+    animation-name: delayModal;
+    animation-duration: 0.8s;
+    margin: auto;
+    margin-top: 120px;
+} */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* #register-container {
+  width: 400px;
+  height: 550px;
+  border: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+
+  border-radius: 20px;
+  animation-name: delayModal;
+  animation-duration: 0.8s;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+} */
+
+#close-register-btn:hover {
+  cursor: pointer;
+}
+
+
+#account-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#register-alert {
+  color: #6a0000;
+  background-color: #f5cccc;
+}
+
+
+#passCheck{
+  margin-top: 20px;
+  margin-right: 5px;
+}

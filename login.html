@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="LogRegStyle.css">
+</head>
+
+<body>
+
+
+  <div class="logo">
+    <a href="movieApp.html" />
+    <img src="/batmanicon.png" id="homepageicon" alt="homepageicon" />
+    </a>
+  </div>
+
+
+  <!-- Modal Login -->
+  <div id="loginBox" class="w3-modal">
+    <div class="w3-modal-content w3-card-4" id="register-container">
+      <div id="dialog-container">
+        <i class="far fa-times-circle 2x" id="close-login-btn"></i>
+        <h2 id="login-title">Log In</h2>
+        <form class="register-class-form">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="inputTitle">Username</label>
+            <input type="text" class="form-control" id="login-username" name="userid"
+              placeholder="Enter username here" />
+          </div>
+
+          <div class="form-group">
+
+
+            <label for="exampleInputPassword1" class="inputTitle">Password</label>
+            <input type="password" class="form-control" id="login-password" name="pass"
+              placeholder="Enter password here" />
+            <input id="passCheck" type="checkbox" onclick="myFunction()"><span class="showPassword">Show Password</span>
+          </div>
+
+          <div class="alert alert-danger d-none" role="alert" id="login-alert"></div>
+          <div id="account-button-container">
+
+            <button id="login-event-button" onclick="check(this.form)" class="btn btn-primary" value="Login">
+              Log In
+            </button>
+
+          </div>
+          <div id="a-account">
+            <h4 id="a-account1">
+              Don't have an account?<br></h4>
+            <div class="register-link">
+              <a id="link-register" href="register.html">Register</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+
+
+    function check(form) {
+
+      var loggedUsername= form.userid.value;
+      
+      if ((form.userid.value == "Bogdan" || form.userid.value == "Nicoleta" ||
+        form.userid.value == "Felix" || form.userid.value == "Mihai")
+        && form.pass.value == "password")
+        
+        {
+        window.open("/movieAppLogged.html")
+        localStorage.setItem("username", loggedUsername);
+      }
+      else {
+        alert("Wrong username or password")
+      }
+     
+    }
+
+  </script>
+
+  <script src="/home.js"></script>
+  <script src="/login.js"></script>
+
+</body>
+
+</html>
