@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    width: 100%;
+}
+
+.background-img {
+    background-image: url("./images/cinema.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.typewriter {
+    color: white;
+    font-size: 25px;
+}
+
+.typewriter p {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    margin-top: 50px;
+}
+
+.typewriter p > span {
+    font-size: 17px;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 40%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.carousel-container {
+    height: 700px;
+    width: 100%;
+}
+
+.carousel {
+    width: 90%;
+    min-width: 300px;
+}
+
+.carousel-container img {
+    height: 300px;
+}
+
+.movies-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(3, 3, 3, 0.94);
+}
+
+.movie-item {
+    max-width: 400px;
+    background-color: rgb(58, 58, 58);
+    color: #ffffff;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+.movie-item:hover {
+    scale: 1.03;
+}
+
+.movie-interface {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieImage {
+    width: 100%;
+}
+
+.movie-details-container {
+    margin-top: 10px;
+}
+
+.see-more-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    margin-top: 2rem;
+    max-width: 150px;
+}
+
+.see-more-btn:hover {
+    background-color: rgb(36, 35, 35);
+    color: yellow;
+}
+
+.see-more-btn:focus {
+    outline: none;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgba(3, 3, 3, 0.94);
+    color: #ffffff;
+    line-height: 50%;
+}
+
+.bottom-buttons>button {
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+.bottom-buttons>button:hover {
+    background-color: rgb(255, 255, 52);
+    color: black;
+}
+
+.bottom-buttons>span {
+    margin: 0 5px;
+    
+}
+
+.bottom-buttons>span:hover {
+    background-color: rgb(36, 35, 35);
+    color: #ffffff;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .typewriter {
+        color: white;
+        font-size: 25px;
+    }
+    .carousel-container {
+        height: 700px;
+        width: 100%;
+    }
+    .carousel {
+        width: 70%;
+    }
+    .carousel-container img {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .carousel {
+        width: 50%;
+    }
+}
