@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #17a2b8;
     height: 00vh;
-    background:url('image-asset.jpeg');
+    background:url('/assets/cover.jpeg');
   }
 
   #homepageicon{
