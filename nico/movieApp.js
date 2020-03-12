@@ -4,7 +4,7 @@ var prevLink = "";
 var nextLink = "";
 
 function getDataFromServer() {
-    fetch("https://movies-api-siit.herokuapp.com/movies?take=12&skip=12")
+    fetch("https://movies-api-siit.herokuapp.com/movies?take=12&skip=0")
         .then(parseResponse)
         .then(displayMovies)
 }
@@ -13,8 +13,8 @@ function parseResponse(response) {
     return response.json();
 }
 
-
 function displayMovies(movies) {
+
     // remove existing movies
     while (moviesList.firstChild) {
         moviesList.removeChild(moviesList.firstChild);
@@ -31,13 +31,23 @@ function displayMovies(movies) {
     prevLink = movies.pagination.links.prev;
     nextLink = movies.pagination.links.next;
 
+    if(prevLink === null) {
+        prevBtn.style.display = "none"
+    } else {
+        prevBtn.style.display = ""
+    }
+
+    if(nextLink === null) {
+        nextBtn.style.display = "none"
+    } else {
+        nextBtn.style.display = ""
+    }
 
     // create new movies
     for (var i = 0; i < movies.results.length; i++) {
         var movieItem = movies.results[i];
         createMovieContainer(movieItem);
     }
-
     console.log(movies)
 }
 
@@ -124,15 +134,6 @@ function createMovieContainer(movieItem) {
             this.parentElement.parentElement.childNodes[1].style.display = "block";
             this.innerHTML = "Show less...";
         }
-
-        // if (this.parentElement.parentElement.childNodes[1].style.display === "none") {
-
-        //     this.innerHTML = "Show less..."
-        // } else if (this.parentElement.parentElement.childNodes[1].style.display = "none") {
-        //     this.parentElement.parentElement.childNodes[1].style.display = "";
-            
-        //     this.innerHTML = "Show more...";
-        // }
     })
 }
 
@@ -165,6 +166,3 @@ window.onbeforeunload = () =>
 
 
 getDataFromServer();
-
-// TODO: Hide Prev button when on first page
-// TODO: Hide Next button when on last page
