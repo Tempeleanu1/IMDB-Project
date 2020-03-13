@@ -1,0 +1,72 @@
+html{
+    scroll-behavior: smooth;
+}
+#logo {
+    height: auto;
+    max-width: 50px;
+}
+
+body{  
+    height: auto;
+    background-image: url("/images/our-team.jpg");
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#main{
+    background-color: rgba(3, 3, 3, 0.49);
+}
+
+h3, h1{
+    color: white;
+}
+
+nav {
+    background-color: rgba(3, 3, 3, 0.99);
+}
+
+.nav-link {
+    color: white;
+    margin-left: 30px;
+}
+.nav-link:hover {
+    color: yellow;
+    scale: 1.2;
+}
+
+#btn {
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+}
+#btn:hover {
+    border: 1px solid yellow;
+    border-radius: 7px;
+    color: yellow;
+    scale:1.1;
+}
+
+footer {
+    background-color: rgba(3, 3, 3, 0.99);
+    color: white;
+}
+.footer-copyright:hover {
+    color: yellow;
+}
+
+.row {
+    margin-top:100px;
+}
+
+.container-marketing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    margin-top: 100px;
+}
