@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("/images/wallpaperBat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.container {
+  max-width:12000px;
+  min-width:664px;
+  margin: 20px auto;
+  padding:0 40px;
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(94, 94, 94);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(65, 65, 65);
+  color:rgb(221, 190, 15);
+}
+
+.contact {
+  width: 40%;
+  background-color: rgb(43, 43, 43);
+  padding: 20px;
+  margin: 0 auto;
+  color: rgb(221, 190, 15);
+}
+.registrationTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input.changeColorGood {
+  outline: 1px solid green;
+}
+
+input.changeColorBad {
+  outline: 1px solid red;
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.counter {
+  color: red;
+}
+
+
+
+#text {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0px 35px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(43, 43, 43);
+  color: rgb(221, 190, 15);
+}
+
+#text p {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 18px;
+}
+
+#text a {
+  text-decoration: none;
+  color: rgb(221, 190, 15);
+}

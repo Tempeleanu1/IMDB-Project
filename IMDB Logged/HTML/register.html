@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/RegistrationStyle.css">
+  <script src="/js/registration.js"></script>
+ 
+</head>
+
+<body onload="hideText();">
+
+
+  <div class="container">
+  
+
+    <div class="RegistrationTitle">
+
+        <div id="text" name="topText">
+
+        <p name="hiddenMessage"> </p>
+        <a onclick="hideText()" href="javascript::" name="hiddenMessage">&#10005;</a>
+
+      </div>
+      <div class="contact">
+        <form name="form" onsubmit="send(this,event);displayText();">
+          <label for="fname">Username</label>
+          <input type="text" name="userName" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
+            placeholder="Your username..">
+        
+          <label for="password">Password</label>
+          <input type="text" name="password" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
+            placeholder="Type your password..">
+          
+          <label for="password">Retype Password</label>
+          <input type="text" name="passwordRetype" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
+              placeholder="Retype your password..">
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" maxlength="25" oninput="contactFormCSS(), inputTextLimit()"
+            placeholder="Your email..">
+          <br>
+        
+          <input type="submit" value="Submit">
+        </form>
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
