@@ -44,7 +44,7 @@ function displayMovies(movies) {
     }
 
     // create new movies
-    for (var i = 1; i < movies.results.length; i++) {
+    for (var i = 0; i < movies.results.length; i++) {
         var movieItem = movies.results[i];
         createMovieContainer(movieItem);
     }
