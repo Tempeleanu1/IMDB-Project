@@ -114,6 +114,7 @@ body, html {
 
 .movie-details-container {
     margin-top: 10px;
+    max-width: 300px
 }
 
 .see-more-btn {
