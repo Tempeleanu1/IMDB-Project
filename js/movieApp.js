@@ -66,7 +66,11 @@ function createMovieContainer(movieItem) {
     movieYear.innerHTML = "Year: " + movieItem.Year;
 
     var movieImage = document.createElement("img");
-    movieImage.src = movieItem.Poster;
+    if(movieItem.Poster === undefined || movieItem.Poster === null){
+        movieImage.src = "../images/default.jpg"
+    } else {
+        movieImage.src = movieItem.Poster;
+    }
     movieImage.classList.add("movie-img");
 
     var seeMoreBtn = document.createElement("button");
