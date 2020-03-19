@@ -54,7 +54,7 @@ function displayMovies(movies) {
 function createMovieContainer(movieItem) {
 
     var divMovieContainer = document.createElement("div");
-    divMovieContainer.classList.add("movie-item", "animated", "swing");
+    divMovieContainer.classList.add("movie-item");
 
     var movieInterface = document.createElement("div");
     movieInterface.classList.add("movie-interface");

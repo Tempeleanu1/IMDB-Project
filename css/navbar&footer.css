@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+#logo {
+    height: auto;
+    max-width: 50px;
+}
+
+nav {
+    background-color: rgba(3, 3, 3, 0.99);
+}
+
+.nav-link {
+    color: white;
+    margin-left: 30px;
+}
+
+.nav-link:hover {
+    color: yellow;
+    scale: 1.2;
+}
+
+#btn {
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+}
+
+#btn:hover {
+    border: 1px solid yellow;
+    border-radius: 7px;
+    color: yellow;
+    scale: 1.1;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(3, 3, 3, 0.99);
+    color: white;
+    font-size: 30px;
+}
+
+.list-inline {
+    margin-left: 20px;
+}
+
+.fa {
+    color: white;
+    font-size: 25px;
+}
+
+.footer-copyright:hover {
+    color: yellow;
+}
+
+.fa-angle-double-up {
+    position: fixed;
+    right: 55px;
+    bottom: 40px;
+    font-size: 50px;
+    opacity: 0.7;
+    background-color: transparent;
+    border: none;
+}
+
+.fa-angle-double-up:hover {
+    color: yellow;
+}
