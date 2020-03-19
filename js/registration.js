@@ -148,7 +148,7 @@ function contactFormCSS() {
 
   } else if(passInRetype.length<1){
 
-    paswordInputRetype.classList.remove("changeColorBad");
+    passwordInputRetype.classList.remove("changeColorBad");
 
   }
 
@@ -170,3 +170,4 @@ function contactFormCSS() {
   }
 
 }
+

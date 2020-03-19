@@ -23,6 +23,10 @@ nav {
     scale: 1.2;
 }
 
+#nav-menu {
+   color: white;
+}
+
 #btn {
     border: 1px solid white;
     border-radius: 7px;

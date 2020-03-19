@@ -5,16 +5,6 @@ var logged = form.userid.value;
 
 
 
-function myFunction() {
-  var x = document.getElementById("login-password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-
-
 //Login button event
 
 // TODO - nu e necesar sa creezi varibila logInEventButton, poti direct sa faci document.getElementById("login-event-button").addEventListener( ....

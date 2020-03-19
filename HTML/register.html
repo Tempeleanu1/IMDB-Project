@@ -25,17 +25,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./movieLogged.html">Home <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="./login.html">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./register.html">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./team.html">Our Team</a>
         </li>
 
       </ul>
@@ -59,29 +53,30 @@
       <div class="contact">
         <form name="form" onsubmit="send(this,event);displayText();">
           <label for="fname">Username</label>
-          <input type="text" name="userName" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
-            placeholder="Your username..">
+          <input type="text" name="userName" maxlength="15" oninput="contactFormCSS()" placeholder="Your username..">
 
           <label for="password">Password</label>
-          <input type="text" name="password" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
+          <input type="text" name="password" maxlength="15" oninput="contactFormCSS()"
             placeholder="Type your password..">
 
           <label for="password">Retype Password</label>
-          <input type="text" name="passwordRetype" maxlength="15" oninput="contactFormCSS(), inputTextLimit()"
+          <input type="text" name="passwordRetype" maxlength="15" oninput="contactFormCSS()"
             placeholder="Retype your password..">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" maxlength="25" oninput="contactFormCSS(), inputTextLimit()"
+          <input type="email" id="email" name="email" maxlength="25" oninput="contactFormCSS()"
             placeholder="Your email..">
           <br>
 
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" onclick="check(this.form)">
+
         </form>
       </div>
 
     </div>
 
   </div>
+
 
 </body>
 

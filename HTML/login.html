@@ -14,14 +14,15 @@
 
   <nav class="navbar navbar-expand-lg fixed-top">
     <img id="logo" src="../images/1.jpg" alt="" srcset=""></a>
-    <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link"  href="./movieLogged.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./login.html">Login</a>
@@ -29,10 +30,7 @@
         <li class="nav-item">
           <a class="nav-link" href="./register.html">Register</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./team.html">Our Team</a>
-        </li>
-        
+
       </ul>
       <form id="search" class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search by title" aria-label="Search">
@@ -44,8 +42,8 @@
   <header></header>
 
   <div class="logo">
-    <a href="/movieApp.html" />
-    <img src="/images/batmanicon.png" id="homepageicon" alt="homepageicon" />
+    <a href="/movieApp.html"></a>
+    <img src="/images/batmanicon.png" id="homepageicon" alt="homepageicon">
     </a>
   </div>
 
@@ -99,22 +97,30 @@
 
     function check(form) {
 
-      var loggedUsername= form.userid.value;
-      
+      var loggedUsername = form.userid.value;
+
       if ((form.userid.value == "Bogdan" || form.userid.value == "Nicoleta" ||
-        form.userid.value == "Felix" || form.userid.value == "Mihai" 
-        || form.userid.value == "Heni" || form.userid.value == "Vlad")
-        && form.pass.value == "password")
-        
-        {
+        form.userid.value == "Felix" || form.userid.value == "Mihai"
+        || form.userid.value == "Heni" || form.userid.value == "Vlad" ||
+        form.userid.value == localStorage.getItem('username'))
+        && form.pass.value == "password" || form.pass.value == localStorage.getItem('password')) {
         window.open("/HTML/movieLogged.html")
         localStorage.setItem("username", loggedUsername);
-      }
-      else {
+      } else {
         alert("Wrong username or password")
       }
-     
+
     }
+
+    function myFunction() {
+      var x = document.getElementById("login-password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
 
   </script>
 
